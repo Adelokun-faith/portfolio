@@ -131,6 +131,46 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+  .container {
+    background: linear-gradient(135deg, #ffcccc, #ff99cc, #cc99ff, #66ccff);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.button {
+    background: #ff3399;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #ff66cc;
+    box-shadow: 0 0 20px rgba(255, 50, 80, 0.7);
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.animated-text {
+    font-size: 2em;
+    animation: pulse 1.5s infinite;
+    color: #ffcc00;
+}
+
 }
 
 @media (max-width: 768px) {
