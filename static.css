@@ -1,1 +1,38 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
 
+.card {
+  background: linear-gradient(45deg, #6c63ff, #b0e0f9);
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: calc(300px - 30px);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content {
+  padding: 15px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 30px);
+  }
+}
